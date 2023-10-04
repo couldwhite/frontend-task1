@@ -1,0 +1,389 @@
+
+  .art-sign-in-parent,
+  .explore-parent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .art-sign-in-parent {
+    gap: var(--gap-8);
+    font-size: var(--h5-size);
+    color: var(--white-white-stich);
+  }
+  .explore-parent {
+    gap: var(--gap-5xl);
+  }
+  .content-parent,
+  .frame-group {
+    display: flex;
+    flex-direction: row;
+  }
+  .frame-group {
+    align-items: flex-start;
+    justify-content: center;
+    gap: var(--gap-94);
+    font-size: var(--mobile-h3-size);
+    color: var(--white-main-white);
+  }
+  .content-parent {
+    border-bottom: 1px solid var(--white-dissable);
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 0 48px;
+    gap: 293px;
+  }
+
+  .copyright,
+  .footer,
+  .privacy-policy-parent {
+    display: flex;
+    align-items: center;
+  }
+  .copyright {
+    width: 1290px;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+  }
+  .footer {
+    position: absolute;
+    top: 1700px;
+    left: 0;
+    flex-direction: column;
+    justify-content: center;
+    padding: var(--padding-92) var(--padding-111);
+    gap: 48px;
+    font-size: var(--h5-size);
+    font-family: var(--h5);
+  }
+
+  .subscribe-and {
+    color: var(--white-white-stich);
+  }
+  .subscribe-and-get-our {
+    margin: 0;
+  }
+
+
+  .images {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-30);
+    font-size: var(--body-regular-s-size);
+    font-family: var(--h5);
+  }
+
+
+  .start-exploring-the {
+    align-self: stretch;
+    position: relative;
+    font-size: var(--h5-size);
+    line-height: 160%;
+    font-family: var(--h5);
+  }
+
+  .artists,
+  .subscribe {
+    color: var(--color-yellow);
+  }
+  .cta1,
+  .title1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .cta1 {
+    border-radius: var(--br-5xs);
+    background-color: var(--color-yellow);
+    height: 52px;
+    padding: var(--padding-xs) var(--padding-40);
+    box-sizing: border-box;
+    font-size: var(--h5-size);
+    color: var(--white-main-white);
+    font-family: var(--h5);
+  }
+  .popular-artists-on-container {
+    position: relative;
+    line-height: 120%;
+    font-weight: 500;
+  }
+  .amazing-and-super-unique-art-o-parent {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    z-index: 1;
+  }
+
+  .amazing-art-work-thi-week-child {
+    position: absolute;
+    margin: 0 !important;
+    top: 600px;
+    left: 1133px;
+    background-color: var(--background-background1);
+    filter: blur(350px);
+    width: 434px;
+    height: 305px;
+    z-index: 0;
+  }
+  .child {
+    position: relative;
+    border-radius: var(--br-base);
+    width: 370px;
+    height: 340px;
+    object-fit: cover;
+  }
+
+  .cyberpunk-cocomo-parent {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .cta5,
+  .frame-parent2 {
+    display: flex;
+    flex-direction: row;
+  }
+  .cta5 {
+    border-radius: var(--br-5xs);
+    border: 1px solid var(--color-yellow);
+    box-sizing: border-box;
+    height: 49px;
+    align-items: center;
+    justify-content: center;
+    padding: var(--padding-12) var(--padding-40);
+    font-size: var(--h5-size);
+    color: var(--color-yellow);
+  }
+  .frame-parent2 {
+    align-self: stretch;
+    align-items: flex-end;
+    justify-content: space-between;
+    font-size: var(--body-regular-s-size);
+    color: var(--white-dissable);
+  }
+
+  .div {
+    border-radius: var(--br-9xl);
+    background-color: var(--background-background4);
+    box-sizing: border-box;
+    width: 410px;
+    padding: var(--padding-20);
+    gap: var(--gap-24);
+  }
+  .cards {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-30);
+    z-index: 2;
+    font-size: var(--h4-size);
+    font-family: var(--h5);
+  }
+  .amazing-art-work-thi-week,
+  .primary-cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .amazing-art-work-thi-week {
+    position: absolute;
+    top: 925px;
+    left: 0;
+    flex-direction: column;
+    padding: var(--padding-92) var(--padding-111);
+    gap: var(--gap-64);
+  }
+  .primary-cta {
+    border-radius: var(--br-5xs);
+    background-color: var(--color-yellow);
+    height: 52px;
+    flex-direction: row;
+    padding: var(--padding-12) var(--padding-40);
+    box-sizing: border-box;
+  }
+  .main-content,
+  .primary-cta-parent {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .primary-cta-parent {
+    flex-direction: row;
+    align-items: center;
+    gap: var(--gap-36);
+    font-size: var(--h5-size);
+    color: var(--white-main-white);
+    font-family: var(--h5);
+  }
+  .main-content {
+    width: 544px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--gap-40);
+  }
+  .art-work {
+    position: relative;
+    font-size: var(--h5-size);
+    line-height: 160%;
+    font-family: var(--h5);
+    color: var(--white-white-stich);
+  }
+  .k-parent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 var(--padding-28) 0 0;
+    gap: var(--gap-8);
+  }
+  .k-group {
+    padding: 0 var(--padding-24) 0 0;
+  }
+  .k-container,
+  .k-group,
+  .stats {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-8);
+  }
+  .stats {
+    width: 509px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: var(--gap-94);
+    font-size: var(--h2-size);
+    color: var(--color-yellow);
+  }
+
+  .group-child6 {
+    position: absolute;
+    top: 0;
+    left: 60px;
+    border-radius: var(--br-5xl);
+    width: 464px;
+    height: 544px;
+    object-fit: cover;
+  }
+
+  .rectangle-parent4,
+  .star-parent {
+    position: absolute;
+    top: 223px;
+    left: 0;
+    width: 171.59px;
+    height: 171.5px;
+  }
+  .rectangle-parent4 {
+    top: 0;
+    width: 524px;
+    height: 544px;
+  }
+  .cta8,
+  .frame-parent7 {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+  }
+
+  .frame-parent7 {
+    position: absolute;
+    top: 467.5px;
+    left: 271px;
+    border-radius: var(--br-base);
+    background-color: var(--background-background4);
+    box-shadow: 0 9px 50px rgba(23, 36, 65, 0.04);
+    width: 304px;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: var(--padding-20);
+    gap: var(--gap-24);
+    color: var(--color-yellow);
+    font-family: var(--h5);
+  }
+  .group-parent1 {
+    position: relative;
+    width: 575px;
+    height: 637px;
+    font-size: var(--h5-size);
+    color: var(--white-main-white);
+    font-family: var(--font-source-sans-pro);
+  }
+  .hero,
+  .marketplace-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+  .hero {
+    position: absolute;
+    top: 104px;
+    left: 0;
+    width: 1512px;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--padding-92) var(--padding-111);
+    box-sizing: border-box;
+    font-size: 64px;
+  }
+  .marketplace-wrapper {
+    align-items: flex-start;
+    justify-content: flex-start;
+    color: var(--white-main-white);
+  }
+  .cta9,
+  .menu,
+  .nav-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .cta9 {
+    border-radius: var(--br-5xs);
+    background-color: var(--color-yellow);
+    height: 48px;
+    justify-content: center;
+    padding: var(--padding-12) var(--padding-40);
+    color: var(--white-main-white);
+  }
+  .menu {
+    justify-content: center;
+    gap: var(--gap-40);
+  }
+  .cta9,
+  .nav-bar {
+    box-sizing: border-box;
+  }
+  .nav-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1512px;
+    justify-content: space-between;
+    padding: var(--padding-28) var(--padding-111);
+    font-size: var(--h5-size);
+    color: var(--white-dissable1);
+    font-family: var(--h5);
+  }
+  .design {
+    position: relative;
+    background-color: var(--background-background-1);
+    width: 100%;
+    height: 2100px;
+    overflow: hidden;
+    text-align: left;
+    font-size: var(--h2-size);
+    color: var(--white-white-stich);
+    font-family: var(--h2);
+  }
+  
