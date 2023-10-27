@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    line-height: normal;
+  }
+  
+  :root {
+    /* fonts */
+    --h5: Inter;
+    --font-source-sans-pro: "Source Sans Pro";
+    --h2: Canela;
+  
+    /* font sizes */
+    --h5-size: 16px;
+    --h2-size: 48px;
+    --body-regular-s-size: 14px;
+    --h4-size: 24px;
+    --mobile-h3-size: 20px;
+
+    --white-white-stich: #fffffd;
+    --white-dissable: #838382;
+    --background-background-1: #090f1d;
+    --background-background4: #131e3a;
+    --white-dissable1: rgba(255, 255, 253, 0.72);
+    --color-yellow: #d6ef0e;
+    --white-main-white: #fff;
+    --gap-40: 40px;
+    --gap-24: 24px;
+    --gap-8: 8px;
+    --gap-94: 94px;
+    --gap-36: 36px;
+    --gap-64: 64px;
+    --gap-30: 30px;
+    --padding-28: 28px;
+    --padding-111: 111px;
+    --padding-12: 12px;
+    --padding-40: 40px;
+    --padding-92: 92px;
+    --padding-20: 20px;
+    --padding-24: 24px;
+  
+    /* Border radiuses */
+    --br-5xs: 8px;
+    --br-base: 16px;
+    --br-5xl: 24px;
+    --br-9xl: 28px;
+  }
+  
