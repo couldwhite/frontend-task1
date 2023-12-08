@@ -18,6 +18,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Source Sans Pro:wght@700&display=swap"
     />
+    <script src="task.js"></script>
   </head>
   <body>
     <div class="design">
@@ -28,6 +29,29 @@
         <div class="bg-item"></div>
       </div>
       <div class="footer">
+        <section class="section-5">
+
+          <div class="review">
+              <form name="formComment" onsubmit="valid(); return false" >
+                  <div class="comment">
+                      <h2 class="comment__head">Your comment</h2>
+                      <label for="name">Name <span>*</span></label>
+                      <input class="comment__item" type="text" id="name" name="firstName">
+                      <label for="surname">Surname <span>*</span></label>
+                      <input class="comment__item" type="text" id="surname" name="surname" >
+                      <label for="email">Email <span>*</span></label>
+                      <input class="comment__item" type="text" id="email" name="email" placeholder="example@me.ru" >
+                      <label for="number">Phone Number</label>
+                      <input class="comment__item" type="text" id="number" name="phone" placeholder="+X(XXX)XX-XX-XXX">
+                      <label for="message">Comment <span>*</span></label>
+                      <textarea class="comment__item comment__text" cols="50" rows="30"  name="message" id="message"></textarea>
+                      <div class="primary-cta-parent center">
+                          <input class="primary-cta center" type="submit" value="Submit" >
+                      </div>
+                  </div>
+              </form>
+          </div>
+      </section>
         <div class="content-parent">
           <div class="content">
             <div class="text">
