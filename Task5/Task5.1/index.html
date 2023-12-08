@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <script src="task.js">
+
+    </script>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <div class="calculator">
+        <div class="calculator__item calculator__input">
+            <form name="form">
+                <input type="text" readonly name="inputText">
+            </form>
+        </div>
+        <div class="calculator__item calculator__clear calculator__operations" onclick="clearInput()">C</div>
+        <div class="calculator__item calculator__back calculator__operations" onclick="back()">&larr;</div>
+        <div class="calculator__item calculator__operations "  onclick="plus()">+</div>
+        <div class="calculator__item calculator__operations"  onclick="minus()">-</div>
+        <div class="calculator__item calculator__operations"  onclick="multi()">&times;</div>
+        <div class="calculator__item calculator__operations"  onclick="division()"> &divide;</div>
+        <div class="calculator__item" onclick="enterDigit('7')">7</div>
+        <div class="calculator__item" onclick="enterDigit('8')">8</div>
+        <div class="calculator__item" onclick="enterDigit('9')">9</div>
+        <div class="calculator__item  calculator__operations" id="degree" onclick="degree()">x<sup>^y</sup></div>
+        <div class="calculator__item" onclick="enterDigit('4')">4</div>
+        <div class="calculator__item" onclick="enterDigit('5')">5</div>
+        <div class="calculator__item" onclick="enterDigit('6')">6</div>
+        <div class="calculator__item  calculator__operations" onclick="mySqrt()">&radic;x</div>
+        <div class="calculator__item" onclick="enterDigit('1')">1</div>
+        <div class="calculator__item" onclick="enterDigit('2')">2</div>
+        <div class="calculator__item" onclick="enterDigit('3')">3</div>
+        <div class="calculator__item calculator__equal" onclick="equal()">=</div>
+        <div class="calculator__item calculator__zero" onclick="enterDigit('0')">0</div>
+        <div class="calculator__item" onclick="enter('.')">.</div>
+
+    </div>
+    <div class="history">
+        <form name="formHistory">
+            <textarea placeholder="History of operations" readonly name="inputHistory" id="inputHistory"></textarea>
+        </form>
+    </div>
+</div>
+</body>
+</html>
