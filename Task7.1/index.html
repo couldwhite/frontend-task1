@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather forecast</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="header">
+        <h1 class="header__title">Введите название города на английском языке</h1>
+        <label><input type="text" id="city" placeholder="Moscow" required/></label>
+        <button class="header__btn" onclick="showWeather();">Узнать погоду</button>
+    </div>
+    <div class="cont">
+        <h2 class="cont__title">Прогноз погоды на 1 день</h2>
+        <div class="day">
+            <p class="day__name-city"></p>
+            <p class="day__date"></p>
+            <p class="day__icon"></p>
+            <p class="day__weather"></p>
+            <p class="day__clouds"></p>
+            <p class="day__temperature"></p>
+            <p class="day__pressure"></p>
+            <p class="day__humidity"></p>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
