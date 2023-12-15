@@ -1,0 +1,68 @@
+{
+  "animals": [
+    {
+      "kind": "кот",
+      "nickname": "Барсик",
+      "gender": "м",
+      "age": "6",
+      "typeOfFood": "плотоядное",
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "kind": "собака",
+      "nickname": "Дакота",
+      "age": 6,
+      "gender": "ж",
+      "typeOfFood": "плотоядное"
+    },
+    {
+      "id": "3",
+      "kind": "кролик",
+      "nickname": "Несквик",
+      "age": 3,
+      "gender": "м",
+      "typeOfFood": "травоядное"
+    },
+    {
+      "id": "4",
+      "kind": "кот",
+      "nickname": "Бонни",
+      "age": 3,
+      "gender": "ж",
+      "typeOfFood": "плотоядное"
+    },
+    {
+      "id": "5",
+      "kind": "кролик",
+      "nickname": "Луна",
+      "age": 4,
+      "gender": "ж",
+      "typeOfFood": "травоядное"
+    },
+    {
+      "id": "6",
+      "kind": "кот",
+      "nickname": "Бруно",
+      "age": 7,
+      "gender": "м",
+      "typeOfFood": "плотоядное"
+    },
+    {
+      "id": "7",
+      "kind": "собака",
+      "nickname": "Эби",
+      "age": 8,
+      "gender": "ж",
+      "typeOfFood": "плотоядное"
+    },
+    {
+      "id": "8",
+      "kind": "кот",
+      "nickname": "Оскар",
+      "age": 4,
+      "gender": "м",
+      "typeOfFood": "плотоядное"
+    }
+  ]
+}

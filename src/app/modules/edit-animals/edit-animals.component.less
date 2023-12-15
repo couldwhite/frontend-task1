@@ -1,0 +1,43 @@
+@btn-color: black;
+@btn-color-hover: cornflowerblue;
+
+.form {
+  font-family: Corbel, serif;
+  background-color: #86b7fe;
+  width: 200px;
+  padding: 5px 20px;
+  border-radius: 4px;
+  margin-left: 20px;
+  &__title {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  &-control {
+    width: 170px;
+  }
+  &-group {
+    margin-left: 10px;
+    &__error {
+      width: 159px;
+      padding: 10px;
+      border-radius: 4px;
+      background-color: rgba(161,73,81,0.5);
+    }
+  }
+  &__btn {
+    text-align: center;
+  }
+}
+
+.btn {
+  margin: 10px;
+  padding: 5px 10px;
+  color: #fff;
+  background-color: @btn-color;
+  letter-spacing: 1px;
+  font-family: "Cooper Black", sans-serif;
+  &:hover {
+    background-color: @btn-color-hover;
+    cursor: pointer;
+  }
+}

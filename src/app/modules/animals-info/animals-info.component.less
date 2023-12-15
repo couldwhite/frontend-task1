@@ -1,0 +1,34 @@
+@btn-color: black;
+@btn-color-hover: cornflowerblue;
+
+h1 {
+  font-family: Corbel, serif;
+  font-size: 20px;
+}
+
+p {
+  font-family: Corbel, serif;
+  font-size: 16px;
+}
+
+.btn {
+  margin: 10px 100px;
+  padding: 7px 5px;
+  color: #fff;
+  background-color: @btn-color;
+  letter-spacing: 1px;
+  font-family: "Cooper Black", sans-serif;
+&:hover {
+   background-color: @btn-color-hover;
+   cursor: pointer;
+ }
+}
+
+.color {
+  &red {
+    background-color: #6a1a21;
+  }
+  &green {
+    background-color: #157347;
+  }
+}

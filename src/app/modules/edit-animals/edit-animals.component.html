@@ -1,0 +1,58 @@
+<form class="form" novalidate [formGroup]="formModel">
+  <p class="form__title">Редактирование данных питомца</p>
+  <label for="kind">Вид</label>
+  <input class="form-control"
+         id="kind"
+         name="kind"
+         formControlName="kind">
+  <div class="form-group__error"
+       *ngIf="formModel.controls.kind.invalid && formModel.controls.kind.dirty">
+    Некорректный вид питомца
+  </div>
+  <label for="nickname">Кличка</label>
+  <input class="form-control"
+         id="nickname"
+         name="nickname"
+         formControlName="nickname">
+  <div class="form-group__error"
+       *ngIf="formModel.controls.nickname.invalid && formModel.controls.nickname.dirty">
+    Некорректная кличка питомца
+  </div>
+  <label for="gender">Пол</label>
+  <input class="form-control"
+         id="gender"
+         name="gender"
+         formControlName="gender">
+  <div class="form-group__error"
+       *ngIf="formModel.controls.gender.invalid && formModel.controls.gender.dirty">
+    Некорректный пол питомца
+  </div>
+  <label for="age">Возраст</label>
+  <input class="form-control"
+         id="age"
+         name="age"
+         formControlName="age">
+  <div class="form-group__error"
+       *ngIf="formModel.controls.age.invalid && formModel.controls.age.dirty">
+    Некорректный возраст питомца
+  </div>
+  <label for="typeOfFood">Тип питания</label>
+  <input class="form-control"
+         id="typeOfFood"
+         name="typeOfFood"
+         formControlName="typeOfFood">
+  <div class="form-group__error"
+       *ngIf="formModel.controls.typeOfFood.invalid && formModel.controls.typeOfFood.dirty">
+    Некорректный тип питания питомца
+  </div>
+  <div class="form__btn">
+    <button class="btn" type="submit"
+            [disabled]="formModel.invalid"
+            (click)="editAnimal()">
+      Редактировать
+    </button>
+  </div>
+</form>
+<div class="btn-layout">
+  <button class="btn" type="reset" (click)="goHome()">Назад</button>
+</div>

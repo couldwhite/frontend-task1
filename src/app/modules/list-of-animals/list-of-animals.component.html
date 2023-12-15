@@ -1,0 +1,101 @@
+<div class="animals">
+  <div class="animals-selected" *ngFor="let animal of animals; let i = index">
+    <div (click)="onSelect(animal)">
+      <span>{{animal.kind}}</span> {{animal.nickname}}
+    </div>
+    <div *ngIf="animal === selectedAnimal">
+      <app-animals-info [animal]="animal"
+                        [ngClass]="isActive ? 'green' : 'red'"
+                        (changeColor)="changeColor($event)">
+      </app-animals-info>
+    </div>
+  </div>
+</div>
+<form class="form" novalidate *ngIf="isActiveForm">
+  <p class="form__title">Добавление нового питомца</p>
+  <div class="form-group">
+    <label for="kind">Вид</label>
+    <input class="form-control"
+           id="kind"
+           name="kind"
+           [(ngModel)]="newAnimal.kind"
+           #kind = "ngModel"
+           required
+           pattern="[а-я]{2,10}">
+    <div class="form-group__error" *ngIf="kind.dirty && kind.invalid">
+      Некорректный вид питомца
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="nickname">Кличка</label>
+    <input class="form-control"
+           id="nickname"
+           name="nickname"
+           [(ngModel)]="newAnimal.nickname"
+           #nickname = "ngModel"
+           required
+           pattern="^[А-Я][А-Яа-я\s]{1,15}">
+    <div class="form-group__error" *ngIf="nickname.dirty && nickname.invalid">
+      Некорректная кличка питомца
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="gender">Пол</label>
+    <input class="form-control"
+           id="gender"
+           name="gender"
+           [(ngModel)]="newAnimal.gender"
+           #gender = "ngModel"
+           required
+           pattern="[мж]{1}">
+    <div class="form-group__error" *ngIf="gender.dirty && gender.invalid">
+      Некорректный пол питомца
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="age">Возраст</label>
+    <input class="form-control"
+           id="age"
+           name="age"
+           [(ngModel)]="newAnimal.age"
+           #age = "ngModel"
+           required
+           pattern="^[1-9]$|^[1-3][0-9]$">
+    <div class="form-group__error" *ngIf="age.dirty && age.invalid">
+      Некорректный возраст питомца
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="typeOfFood">Тип питания</label>
+    <input class="form-control"
+           id="typeOfFood"
+           name="typeOfFood"
+           [(ngModel)]="newAnimal.typeOfFood"
+           #typeOfFood = "ngModel"
+           pattern="[а-я]{5,13}">
+    <div class="form-group__error" *ngIf="typeOfFood.dirty && typeOfFood.invalid">
+      Некорректный тип питания питомца
+    </div>
+  </div>
+  <div class="form__btn">
+    <button class="btn" type="submit"
+            [disabled]="kind.invalid || nickname.invalid || gender.invalid || age.invalid || typeOfFood.invalid"
+            (click)="addAnimal()">
+      Добавить
+    </button>
+  </div>
+</form>
+<div class="btn-layout">
+  <button class="btn" (click)="hideCats()">
+    {{isCatVisible ? 'Скрыть котиков' : 'Показать котиков'}}
+  </button>
+  <button class="btn" (click)="showForm()">Добавить питомца</button>
+  <button class="btn"
+          (click)="goEditAnimal()">
+    Редактировать питомца
+  </button>
+  <button class="btn"
+          (click)="deleteAnimal()">
+    Удалить
+  </button>
+</div>
