@@ -1,1 +1,0 @@
-#It's the repository for frontend studies
